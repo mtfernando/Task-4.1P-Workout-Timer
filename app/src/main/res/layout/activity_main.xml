@@ -7,12 +7,74 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/workoutTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Your previous workout details will appear here!"
+        android:textColor="#031B61"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Chronometer
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/playImg"
+        android:onClick="startTimer"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        android:onClick="pauseTimer"
+        app:srcCompat="@drawable/pauseImg"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        android:onClick="stopTimer"
+        app:srcCompat="@drawable/stopImg"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:id="@+id/enterWorkoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your workout type:"
+        android:textColor="#031B61"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="617dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
