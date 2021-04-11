@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/workoutTextView"
+        android:layout_width="494dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        android:gravity="center"
+        android:text="Your previous workout details will appear here!"
+        android:textColor="#031B61"
+        android:textSize="18sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/playimg"
+            android:onClick="startTimer"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/pauseimg"
+            android:onClick="pauseTimer"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/stopimg"
+            android:onClick="stopTimer"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/enterWorkoutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:layout_marginBottom="27dp"
+            android:text="Enter your workout type:"
+            android:textColor="#031B61"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="216dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+</LinearLayout>
